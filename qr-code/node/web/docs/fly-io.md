@@ -15,7 +15,10 @@
 
    - In the `[env]` section, add the following environment variables (in a `"` delimited string):
 
-     | Variable          | Description/value                                                                                                                                                                                                                                                                                  |
+     | Variable          | Description/value          
+     
+     
+     |
      | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
      | `BACKEND_PORT`    | The port on which to run the app; set to the same value as the `EXPOSE` line in the `Dockerfile` (`Dockerfile` default value is `8081`.                                                                                                                                                            |
      | `HOST`            | set to the URL of the new app; this can be constructed by taking the `app` variable at the very top of the `fly.toml` file, prepending it with `https://` and adding `.fly.dev` to the end, e.g, if `app` is `"fancy-cloud-1234"`, then `HOST` should be set to `https://fancy-cloud-1234.fly.dev` |
